@@ -1,0 +1,16 @@
+coverage
+docs
+media
+node_modules
+src
+preview
+storybook
+.eslintignore
+.eslintrc
+.gitattributes
+.gitignore
+.vscode
+tsconfig.json
+yarn.lock
+vite.config.ts
+index.html

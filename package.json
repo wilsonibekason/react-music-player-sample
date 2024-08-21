@@ -1,0 +1,45 @@
+{
+  "name": "react-modern-audio-player-root",
+  "version": "0.0.1",
+  "workspaces": [
+    "package",
+    "storybook"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slash9494/react-simple-audio-player.git",
+    "directory": "package"
+  },
+  "private": true,
+  "scripts": {
+    "build": "cd package && yarn build",
+    "release": "changeset publish",
+    "version-packages": "changeset version",
+    "prepare": "husky install",
+    "lint": "eslint --fix ."
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "@changesets/cli": "^2.24.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "lint-staged": {
+    "*.{js,css,mdx,jsx,tsx,ts}": [
+      "prettier --list-different",
+      "eslint"
+    ]
+  }
+}
